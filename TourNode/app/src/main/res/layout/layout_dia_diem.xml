@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+           android:id="@+id/setStt"
+            android:layout_width="51dp"
+            android:text="1/1"
+            android:layout_height="55dp"
+            android:background="@drawable/bo"></Button>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:text="Tên Địa Điểm"
+                android:id="@+id/txtTenDiaDiem"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                ></TextView>
+            <TextView
+                android:text=""
+                android:id="@+id/txt_dia_chi"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"></TextView>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/hinhAnh"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/no_photo"
+            ></ImageView>
+    </TableRow>
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ScrollView android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:fillViewport="true"
+                android:scrollbars="vertical">
+        <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/txt_mo_ta"
+                android:text="Ghi chú"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </TextView>
+        </ScrollView>
+    </TableRow>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:background="#B0BEC5"/>
+</LinearLayout>

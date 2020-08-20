@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Content -->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool_bar">
+
+        </androidx.appcompat.widget.Toolbar>
+
+         <com.google.android.material.tabs.TabLayout
+            android:layout_gravity="top"
+             android:id="@+id/tab"
+             app:tabTextColor="#FFFFFF"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:tabMode="fixed"
+             android:elevation="4dp"
+             app:tabIndicatorHeight="3dp">
+         </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabShow"
+        app:fabSize="normal"
+        app:maxImageSize="60dp"
+        app:layout_anchor="@id/view_demo"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_margin="10dp"
+        android:src="@drawable/fabicon"
+
+        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <include
+        layout="@layout/fab_layout"
+        app:layout_anchor="@+id/view_demo"
+        app:layout_anchorGravity="center"></include>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+

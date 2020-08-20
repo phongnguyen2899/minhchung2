@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            style="@style/toolbar_theme"
+            app:title="Sửa địa điểm"
+            app:titleTextColor="#FFFF"
+            app:subtitleTextColor="#FFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:background="#FFD3CDCD"
+        android:id="@+id/textView2"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chi Tiết Và Địa Điểm" />
+
+    <EditText
+        android:id="@+id/edtTenDiaDiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tên Địa Điểm"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/edtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Đỉa Chỉ"
+        />
+
+    <EditText
+        android:id="@+id/edt_Mo_Ta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mô Tả Về Địa Điểm"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông Tin Khác"
+        android:background="#FFD3CDCD"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/icon_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_camera1"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/icon_add_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_camera"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/icon_add_photo"></ImageButton>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="500dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toRightOf="@+id/icon_camera"
+            android:src="@drawable/no_photo"></ImageView>
+
+    </RelativeLayout>
+
+</LinearLayout>
